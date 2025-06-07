@@ -1,0 +1,131 @@
+@charset "UTF-8";
+
+/* 共通設定 */
+body {
+  margin: 0;
+  background: #fbfbfb;
+  font-family: '游ゴシック', YuGothic, "游ゴシック体 Pr6N M", "Yu Gothic Pr6N M", 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, sans-serif;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+ul {
+  margin: 0;
+  padding: 0;
+  letter-spacing: 0.5px;
+}
+
+ul {
+  list-style: none;
+}
+
+a:link,a:visited{
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:hover{
+  opacity: 0.5;
+}
+
+/* PC */
+@media screen and (min-width:768px) {
+
+  /* ヘッダー */
+  .header-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid rgb(220, 217, 217);
+  }
+
+  .header-logo {
+    margin-left: 20px;
+  }
+
+  .header-subsidiary {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+  }
+
+  .header-subsidiary>.search-form {
+    margin: 0 5px;
+  }
+
+  .search-input {
+    padding: 5px;
+    background-color: rgb(244, 239, 239);
+    border: none;
+    border-radius: 5px;
+  }
+
+
+  .h-icon-user,
+  .h-icon-cart {
+    width: 40px;
+    height: 40px;
+    margin: 0 5px;
+  }
+
+  .h-icon-user>img,
+  .h-icon-cart>img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .header-nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    border-bottom: 1px solid rgb(220, 217, 217);
+  }
+
+  .header-nav>.nav-list{
+    margin: 0 10px;
+  }
+
+  /* メイン */
+  .products-wrap{
+    max-width: 1000px;
+    margin: 40px auto;
+  }
+
+  .product-lists{
+    display: grid;
+    gap: 40px 40px;
+    grid-template-columns: repeat(3,1fr);
+  }
+
+  .list-item{
+    padding: 15px;
+    background-color: #f4f2f2;
+    border-radius: 5px;
+  }
+
+  .item-link{
+    display: block;
+    width: 250px;
+    height: 350px;
+    margin: 0 auto;
+  }
+
+  .item-img{
+    width: 100%;
+  }
+  
+}
+
+/* タブレット */
+@media screen and (min-width:521px) and (max-width: 767px) {}
+
+/* スマホ */
+@media screen and (max-width:520px) {}
+
+/* テスト */
