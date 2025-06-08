@@ -28,7 +28,7 @@ addEventListener('DOMContentLoaded', () => {
       const li = document.createElement('li');
       li.classList.add('list-item');
       li.innerHTML = `
-        <a href="#" class="item-link">
+        <a href="../pages/maintenance.html" class="item-link">
           <img src="./img/main/m-product_0001.png" class="item-img">
           <h3 class="item-name">${item.name}</h3>
           <p class="item-price">${item.price.toLocaleString('ja-jp',{style: 'currency', currency:'JPY'})}</p>

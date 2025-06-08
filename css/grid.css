@@ -32,13 +32,14 @@ a:hover {
   opacity: 0.5;
 }
 
-.copyright{
+.copyright {
   display: block;
   text-align: center;
 }
 
 /* PC */
 @media screen and (min-width:768px) {
+
   /* ヘッダー */
   .header-wrap {
     display: flex;
@@ -65,7 +66,7 @@ a:hover {
 
   .search-input {
     padding: 5px;
-    background-color: rgb(244, 239, 239);
+    background-color: rgb(212, 212, 212);
     border: none;
     border-radius: 5px;
   }
@@ -130,6 +131,7 @@ a:hover {
 
 /* タブレット */
 @media screen and (min-width:521px) and (max-width: 767px) {
+
   /* ヘッダー */
   .header-wrap {
     position: relative;
@@ -160,6 +162,7 @@ a:hover {
     width: 300px;
     height: 30px;
     padding: 0;
+    background-color: rgb(212, 212, 212);
     border-radius: 5px;
     border: 1px solid rgb(220, 217, 217);
   }
@@ -224,13 +227,13 @@ a:hover {
     border-radius: 5px;
   }
 
-  .item-link{
+  .item-link {
     display: block;
     width: 100%;
     height: 100%;
   }
 
-  .item-img{
+  .item-img {
     width: 100%;
     border-radius: 5px;
   }
@@ -238,5 +241,118 @@ a:hover {
 
 /* スマホ */
 @media screen and (max-width:520px) {
-  
+  body {
+    min-width: 280px;
+  }
+
+  /* ヘッダー */
+  .header-wrap {
+    position: relative;
+    height: 50px;
+    border-bottom: 1px solid rgb(220, 217, 217);
+  }
+
+  .header-logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+  }
+
+  .header-subsidiary {
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    height: 50px;
+  }
+
+  .search-form {
+    position: absolute;
+    top: 150%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .search-input {
+    height: 30px;
+    width: 200px;
+    padding: 0;
+    background-color: rgb(212, 212, 212);
+    border: 1px solid rgb(220, 217, 217);
+    border-radius: 5px;
+  }
+
+  .h-icon-user {
+    position: absolute;
+    top: 50%;
+    right: 12%;
+    transform: translate(-50%, -50%);
+    width: 15px;
+  }
+
+  .h-icon-cart {
+    position: absolute;
+    top: 50%;
+    right: 1%;
+    transform: translate(-50%, -50%);
+    width: 25px;
+  }
+
+  .h-icon-user>img,
+  .h-icon-cart>img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .header-nav {
+    margin: 50px auto 0 auto;
+    padding: 10px 0;
+    border: 1px solid rgb(220, 217, 217);
+    text-align: center;
+  }
+
+  .nav-list:hover {
+    opacity: 0.5;
+  }
+
+  .products-wrap {
+    padding: 20px 10px;
+  }
+
+  .product-lists {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .list-item {
+    padding: 10px;
+    background-color: #f4f2f2;
+    border-radius: 5px;
+  }
+
+  .item-link {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  .item-img {
+    width: 100%;
+    border-radius: 5px;
+  }
+
+  .item-name {
+    font-size: 1rem;
+  }
+}
+
+/* メンテナンス画面 */
+.maintenance-message{
+  height: 100vh;
+  text-align: center;
+  line-height: 100vh;
 }
