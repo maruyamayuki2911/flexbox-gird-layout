@@ -8,6 +8,7 @@ addEventListener('DOMContentLoaded', () => {
         throw new Error('HTTPエラー',response.status);
       }
 
+      // JSONファイルをJSオブジェクトに変換
       return await response.json();
 
     }catch(error){
@@ -21,7 +22,8 @@ addEventListener('DOMContentLoaded', () => {
   const displayProducts = async () => {
     // 商品情報を取得
     const productLists = await fetchData();
-    console.log(productLists.products);
+
+    // 商品を表示
     productLists.products.forEach((item) => {
       const li = document.createElement('li');
       li.classList.add('list-item');
@@ -37,6 +39,4 @@ addEventListener('DOMContentLoaded', () => {
   }
   
   displayProducts();
-
-  
 });
